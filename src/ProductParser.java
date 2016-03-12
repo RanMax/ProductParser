@@ -18,11 +18,13 @@ import java.util.HashSet;
 public class ProductParser {
     public static void main(String[] args) {
         //downloadFiles("http://www.part33.ru/prices/index.php?word=&brand=all&t_type=all&z_group=all&search=%CF%EE%E8%F1%EA","e:/input2.html",100);
+        downloadFiles("http://www.part33.ru/prices/index.php?word=&brand=all&t_type=all&z_group=all&search=%CF%EE%E8%F1%EA","e:/input2.html",100);
 
         ProductParser parser = new ProductParser();
-        ArrayList<Product> result = parser.execute2();
-        Model model = Model.getModel("localhost","root","","kb1");
-        model.saveBufferProducts(result);
+        //ArrayList<Product> result = parser.execute2();
+        //Model model = Model.getModel("server88.hosting.reg.ru","u0130576_admin","admin600","u0130576_shop_electrolux");
+        //Model model = Model.getModel("localhost","root","admin611root","miele");
+        //model.saveBufferProducts(result);
         //parser.save();
 
         //try {
